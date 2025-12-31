@@ -1,0 +1,414 @@
+/* Warriors Blog Theme Styles */
+
+:root {
+    --warriors-blue: #1D428A;
+    --warriors-gold: #FFC72C;
+    --warriors-navy: #041E42;
+}
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.page-header {
+    background-color: var(--warriors-navy);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, var(--warriors-blue), var(--warriors-navy));
+    opacity: 0.9;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* FIX: Category Badges */
+.post-meta .badge {
+    background-color: var(--warriors-blue) !important;
+    color: white !important;
+    font-weight: normal !important;
+    padding: 0.35em 0.65em !important;
+    border-radius: 4px !important;
+    margin-right: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
+    display: inline-block !important;
+    font-size: 0.75rem !important;
+    text-decoration: none !important;
+}
+
+.post-meta .badge.bg-primary {
+    background-color: var(--warriors-blue) !important;
+}
+
+.post-meta .badge a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* Cards & Posts */
+.blog-post {
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--warriors-blue);
+    border-color: var(--warriors-blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--warriors-navy);
+    border-color: var(--warriors-navy);
+}
+
+.btn-warning {
+    background-color: var(--warriors-gold);
+    border-color: var(--warriors-gold);
+    color: #333;
+}
+
+/* FIX: Layout Container */
+.container {
+    max-width: 1200px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main.col-lg-8 {
+    width: 66.666667%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-lg-4 {
+    width: 33.333333%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Widgets */
+.widget {
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+
+.widget-title {
+    color: var(--warriors-blue);
+    font-weight: 600;
+    border-bottom: 2px solid var(--warriors-gold);
+    padding-bottom: 0.5rem;
+}
+
+/* Comments */
+.comment-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.comment-body {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+}
+
+footer a:hover {
+    color: var(--warriors-gold) !important;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    main.col-lg-8, .col-lg-4 {
+        width: 100% !important;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .blog-post {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-meta .badge {
+        font-size: 0.7rem !important;
+        padding: 0.25em 0.5em !important;
+    }
+}
+
+/* Pagination */
+.pagination .page-link {
+    color: var(--warriors-blue);
+}
+
+.pagination .active .page-link {
+    background-color: var(--warriors-blue);
+    border-color: var(--warriors-blue);
+}
+
+/* Tags */
+.post-tags a {
+    background: #f8f9fa;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    color: #666;
+    border: 1px solid #dee2e6;
+}
+
+.post-tags a:hover {
+    background: var(--warriors-blue);
+    color: white;
+    border-color: var(--warriors-blue);
+}
+
+/* Post Excerpt Fix */
+.post-excerpt p {
+    color: #333 !important;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Make sure sidebar stays on side */
+.sidebar {
+    position: sticky;
+    top: 20px;
+}
+/* Warriors Navigation Styles */
+.navbar {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar-brand span {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255,255,255,0.9) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: white !important;
+    background-color: rgba(255, 199, 44, 0.2);
+}
+
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 199, 44, 0.3);
+    color: #FFC72C !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Page Header Improvements */
+.page-header {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header h1.text-warning {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.page-header .btn-warning {
+    box-shadow: 0 4px 15px rgba(255, 199, 44, 0.4);
+    transition: all 0.3s ease;
+}
+
+.page-header .btn-warning:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 199, 44, 0.6);
+}
+
+/* Search Collapse */
+#searchCollapse {
+    background: rgba(0,0,0,0.9);
+}
+
+#searchCollapse input {
+    border: 1px solid #FFC72C;
+}
+
+/* Responsive Navigation */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 0.5rem 0 !important;
+        margin: 0.25rem 0;
+    }
+    
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .navbar-brand small {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .page-header h1.display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .page-header .lead {
+        font-size: 1.1rem;
+    }
+}
+/* Warriors Logo Styles */
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+    transform: rotate(-10deg) scale(1.1);
+}
+
+/* Header Logo Circle */
+.page-header .rounded-circle {
+    animation: pulse 2s infinite;
+    transition: all 0.3s ease;
+}
+
+.page-header .rounded-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255,199,44,0.7) !important;
+}
+
+.page-header .rounded-circle img {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 20px rgba(255,199,44,0.5);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255,199,44,0.8);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255,199,44,0.5);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Responsive Logo Adjustments */
+@media (max-width: 991.98px) {
+    .navbar-brand img {
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    .navbar-brand span {
+        font-size: 1.2rem;
+    }
+    
+    .navbar-brand small {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header .rounded-circle {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    
+    .page-header .rounded-circle img {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
