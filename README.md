@@ -1,7 +1,5 @@
 # Warriors Fan Blog - WordPress Theme
 
-![Theme Screenshot](screenshot.png)
-
 🏀 **Professional WordPress Theme for Golden State Warriors Fans**
 
 A clean, responsive WordPress theme built specifically for Golden State Warriors fans. Features the team's official blue and gold colors, custom "Dub Nation" navigation, blog posts with category badges, and a widget-ready sidebar.
@@ -20,7 +18,6 @@ A clean, responsive WordPress theme built specifically for Golden State Warriors
 3. Activate in WordPress Admin → Appearance → Themes
 
 ## Preview
-![Theme Preview](screenshot.png)
 *Homepage of the Warriors Blog Theme*
 
 ---
